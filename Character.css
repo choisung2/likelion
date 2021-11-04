@@ -1,0 +1,268 @@
+.sung2 {
+    position: relative;
+    margin: 120px auto;
+    width: 440px;
+}
+
+.hair {           
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(77, 52, 31);
+    border: 10px solid rgb(77, 52, 31);
+    border-radius: 0% 0% 25% 70%;
+    box-sizing: border-box;
+    transform: skew(25deg) rotate(10deg);
+    box-shadow: rgb(22, 22, 22);
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.cap {
+    position: absolute;
+    top: -90px;
+    left: 140px;
+    width: 240px;
+    height: 150px;
+    background-color: rgb(46, 46, 46);
+    border: 10px solid rgb(46, 46, 46);
+    border-radius: 100% 100% 5% 5%;
+    box-sizing: border-box;
+    z-index: 1;
+    transform: rotate(10deg);
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.cap1 {
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(46, 46, 46);
+    border: 10px solid rgb(46, 46, 46);
+    border-radius: 10% 100% 100% 20%;
+    box-sizing: border-box;
+    transform: skew(21deg);
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ear1 {
+    position: absolute;
+    top: 120px;
+    left: -90px;
+    width: 130px;
+    height: 170px;
+    background-color: rgb(235, 203, 199);
+    border: 10px solid rgb(235, 203, 199);
+    border-radius: 100% 70% 30% 100%;
+    transform: skew(8deg) rotate(8deg) scaleX(92%);
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ear1-1 {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 10px;
+    height: 40px;
+    opacity: 70%;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-top: 5px solid rgb(0, 0, 0);
+    border-radius: 100% 70% 30% 100%;
+    transform: skew(18deg);
+    box-sizing: border-box;
+}
+
+.ear2 {
+    position: absolute;
+    top: 120px;
+    right: -90px;
+    width: 130px;
+    height: 170px;
+    background-color: rgb(235, 203, 199);
+    border: 10px solid rgb(235, 203, 199);
+    border-radius: 70% 100% 100% 30%;
+    transform: skew(-8deg) rotate(-8deg) scaleX(92%);
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.ear2-1 {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 10px;
+    height: 40px;
+    opacity: 70%;
+    border-left: 3px solid rgb(0, 0, 0);
+    border-top: 5px solid rgb(0, 0, 0);
+    border-radius: 100% 70% 30% 100%;
+    transform: skew(-18deg);
+    box-sizing: border-box;
+}
+
+.face {
+    width: 440px;
+    height: 450px;
+    position: relative;
+    background: rgb(235, 203, 199);
+    border-radius: 150%;
+    border: 10px solid rgb(235, 203, 199);
+    box-sizing: border-box;
+    transform: skew(0.7deg) scaleY(104%);
+    box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.brow1 {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(77, 52, 31);
+    
+    border-radius: 40%;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(20deg);
+}
+
+.eye1 {
+    position: absolute;
+    top: 140px;
+    left: 35px;
+    width: 170px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.eye1-1 {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border: 10px solid rgb(31, 31, 31);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.brow2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(77, 52, 31);
+    
+    border-radius: 40%;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(-20deg);
+}
+
+.eye2 {
+    position: absolute;
+    top: 140px;
+    right: 35px;
+    width: 170px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: rgb(22, 22, 22);
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.eye2-1 {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(31, 31, 31);
+    border: 10px solid rgb(31, 31, 31);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: rgb(22, 22, 22);
+}
+
+
+.nose1 {
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    width: 3px;
+    height: 6px;
+    opacity: 40%;
+    background-color: rgb(31, 31, 31);
+    border-right: 2px solid rgb(175, 175, 175);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.nose2 {
+    position: absolute;
+    top: 260px;
+    right: 200px;
+    width: 3px;
+    height: 6px;
+    opacity: 40%;
+    background-color: rgb(31, 31, 31);
+    border-right: 2px solid rgb(175, 175, 175);
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.mouth {
+    position: absolute;
+    top: 290px;
+    left: 175px;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 29, 29);
+    border: 10px solid rgb(255, 29, 29);
+    border-radius: 30% 30% 80% 80%;
+    box-sizing: border-box;
+    box-shadow: rgb(22, 22, 22);
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blush1 {
+    position: absolute;
+    top: 270px;
+    right: 50px;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(240, 35, 69);
+    border: 10px solid rgb(240, 35, 69);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    opacity: 90%;
+}
+
+.blush2 {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+    width: 80px;
+    height: 50px;
+    background-color: rgb(240, 35, 69);
+    border: 10px solid rgb(240, 35, 69);
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+    opacity: 90%;
+}
