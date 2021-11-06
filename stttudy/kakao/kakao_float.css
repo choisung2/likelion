@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*  */
+
+
+
+h1 {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+nav {
+	display: fixed;
+	width: 1320px;
+	margin: 20px auto;
+	background-color: aqua;
+}
+
+.logo {
+	float: left;
+	margin-right: 350px;
+}
+
+.gnb {
+	overflow: hidden;
+	float: left;
+	line-height: 38px;
+}
+
+.gnb li {
+	list-style: none;
+	float: left;
+	margin-right: 50px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.gnb li:hover {
+    opacity: 50%;
+}
+
+.icon {
+	float: right;
+	font-size: 20px;
+	line-height: 38px;
+	margin-right: 15px;
+}
+
+.bi {
+	margin: 0 10px;
+	border: 4px solid rgba(255, 255, 255, 0);
+	border-radius: 100%;
+}
+
+.bi:hover {
+	background-color: rgba(128, 128, 128, 0.212);
+}
+
+.main-txt {
+	clear: both;
+	overflow: hidden;
+	width: 1320px;
+	margin: auto;
+	padding-top: 120px;
+}
+
+.main-txt img {
+	float: left;
+	width: 70px;
+	display: block;
+}
+
+.main-txt h2 {
+	float: left;
+	line-height: 50px;
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 70px;
+	margin-left: 10px;
+	letter-spacing: -0.1em;
+}
+
+.main-txt p {
+	clear: both;
+	font-size: 45px;
+	font-weight: 600;
+	margin-top: 80px;
+	letter-spacing: -0.1em;
+}
