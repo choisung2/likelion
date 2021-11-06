@@ -1,148 +1,86 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	font-family: 'Nanum Gothic', sans-serif;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-/*  */
-
-
-
-h1 {
-	display: none;
-}
-
 a {
 	text-decoration: none;
 	color: black;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-	width: 1320px;
-	padding: 20px 300px;
-	position: fixed;
-	background-color: rgb(255, 255, 255);
-}
-
 .gnb {
-    margin-left: 95px;
-	line-height: 38px;
+	display: flex;
+    justify-content: space-between;
+	width: 1296px;
+	height: 70px;
+	margin: 0 auto;
 }
 
-.gnb ul {
-    display: flex;
-    justify-content: space-evenly;
+.logo {
+	height: 30px;
+	padding-top: 16px;
 }
 
-.gnb li {
-	list-style: none;
-	margin-right: 50px;
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+	line-height: 70px;
 	font-size: 15px;
 	font-weight: bold;
+	margin-left: 70px;
+	letter-spacing: -1px;
 }
 
-.gnb li:hover {
-    opacity: 50%;
+.menu li {
+	padding: 0 25px;
+}
+
+.menu li:hover {
+	opacity: 50%;
 }
 
 .icon {
 	display: flex;
-    justify-content: space-between;
-	font-size: 20px;
-	line-height: 38px;
-	margin-right: 15px;
+	line-height: 70px;
+}
+
+.icon li {
+	padding: 0 10px;
+}
+
+.icon button {
+	padding: 4px;
+	border: 3px solid rgba(0, 0, 0, 0);
+	border-radius: 100%;
+	background-color: transparent;
+}
+
+.icon button:hover {
+	cursor: pointer;
+	background-color: rgba(128, 128, 128, 0.096);
 }
 
 .bi {
-	margin: 0 12px;
-	border: 4px solid rgba(255, 255, 255, 0);
-	border-radius: 100%;
+	font-size: 20px;
 }
 
-.bi:hover {
-	background-color: rgba(128, 128, 128, 0.212);
+main {
+	width: 1296px;
+	margin: 0 auto;
 }
 
-.main-txt {
-	width: 1320px;
-	margin: auto;
-	padding-top: 180px;
+.main-section {
+	padding-top: 96px;
+	font-size: 45px;
+	font-weight: bold;
+	letter-spacing: -4px;
 }
 
-.month {
-    display: flex;
+.title {
+	display: flex;
+	margin-bottom: 8px;
 }
 
-.main-txt img {
+.title img {
 	width: 70px;
 }
 
-.main-txt h2 {
-	line-height: 50px;
-	font-size: 45px;
-	font-weight: 600;
+.title em {
 	line-height: 70px;
-	margin-left: 10px;
-	letter-spacing: -0.1em;
-}
-
-.main-txt p {
-	font-size: 45px;
-	font-weight: 600;
-	margin-top: 10px;
-	letter-spacing: -0.1em;
-}
-
-.lorem {
-	width: 1320px;
-	margin: 80px auto;
-	font-size: 25px;
+	padding-left: 10px;
 }

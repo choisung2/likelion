@@ -8,49 +8,35 @@
     <title>kakao_prac</title>
 
     <link rel="stylesheet" href="kakao_flex.css">
+    <link rel="stylesheet" href="reset.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <header>
-        <h1>Kakao</h1>
-        <nav>
-            <a href="#" class="logo"><img src="./img/kakao.png" width="80%" alt="kakao"></a>
-            <div class="gnb">
-                <ul>
-                    <li><a href="#">키키오</a></li>
-                    <li><a href="#">뉴스</a></li>
-                    <li><a href="#">기술과 서비스</a></li>
-                    <li><a href="#">약속과 책임</a></li>
-                </ul>
-            </div>
-            <div class="icon">
-                <a href="#"><i class="bi bi-search"></i></a>
-                <a href="#"><i class="bi bi-globe2"></i></a>
-                <a href="#"><i class="bi bi-moon"></i></a>
-            </div>
+    <header class="main-header">        
+        <nav class="gnb">
+            <a href="#"><img src="./img/kakao.png" class="logo alt="kakao"></a>
+            <ul class="menu">
+                <li><a href="#">키키오</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">기술과 서비스</a></li>
+                <li><a href="#">약속과 책임</a></li>
+            </ul>
+            <ul class="icon">
+                <li><button><i class="bi bi-search"></i></button></li>
+                <li><button><i class="bi bi-globe2"></i></button></li>
+                <li><button><i class="bi bi-moon"></i></button></li>
+            </ul>
         </nav>
-        <article class="main-txt">
-            <div class="month">
-                <img src="./img/month_move.gif" alt="">        
-                <h2>오늘의 키키오</h2>
-            </div>
-            <p>11월 5일 금요일 소식입니다</p>
-        </article>
-        <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, cupiditate dicta, quos, sequi vero distinctio sed iste modi nulla praesentium nesciunt consequatur aliquam perferendis. Debitis voluptatum iure sequi dignissimos aut!<br><br>
-        Doloremque, nobis? Libero, pariatur aliquid. Explicabo deleniti sit est temporibus quibusdam maxime. Autem veniam, vero, amet soluta nostrum iste temporibus at, obcaecati praesentium architecto modi deleniti natus neque! Maiores, est.<br><br>
-        Eaque vitae, suscipit harum labore, tenetur culpa nihil optio odio repudiandae alias error incidunt sit unde quidem corrupti veniam molestias corporis eos repellat saepe provident reiciendis quos magnam libero. Assumenda.<br><br>
-        Deserunt temporibus sequi necessitatibus neque recusandae atque quos, ducimus quia amet! Maxime nihil ipsam velit exercitationem magni, mollitia est minima, itaque voluptates ipsa sint consectetur repudiandae tempore. Aut, impedit accusantium.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, cupiditate dicta, quos, sequi vero distinctio sed iste modi nulla praesentium nesciunt consequatur aliquam perferendis. Debitis voluptatum iure sequi dignissimos aut!<br><br>
-        Doloremque, nobis? Libero, pariatur aliquid. Explicabo deleniti sit est temporibus quibusdam maxime. Autem veniam, vero, amet soluta nostrum iste temporibus at, obcaecati praesentium architecto modi deleniti natus neque! Maiores, est.<br><br>
-        Eaque vitae, suscipit harum labore, tenetur culpa nihil optio odio repudiandae alias error incidunt sit unde quidem corrupti veniam molestias corporis eos repellat saepe provident reiciendis quos magnam libero. Assumenda.<br><br>
-        Deserunt temporibus sequi necessitatibus neque recusandae atque quos, ducimus quia amet! Maxime nihil ipsam velit exercitationem magni, mollitia est minima, itaque voluptates ipsa sint consectetur repudiandae tempore. Aut, impedit accusantium.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, cupiditate dicta, quos, sequi vero distinctio sed iste modi nulla praesentium nesciunt consequatur aliquam perferendis. Debitis voluptatum iure sequi dignissimos aut!<br><br>
-        Doloremque, nobis? Libero, pariatur aliquid. Explicabo deleniti sit est temporibus quibusdam maxime. Autem veniam, vero, amet soluta nostrum iste temporibus at, obcaecati praesentium architecto modi deleniti natus neque! Maiores, est.<br><br>
-        Eaque vitae, suscipit harum labore, tenetur culpa nihil optio odio repudiandae alias error incidunt sit unde quidem corrupti veniam molestias corporis eos repellat saepe provident reiciendis quos magnam libero. Assumenda.<br><br>
-        Deserunt temporibus sequi necessitatibus neque recusandae atque quos, ducimus quia amet! Maxime nihil ipsam velit exercitationem magni, mollitia est minima, itaque voluptates ipsa sint consectetur repudiandae tempore. Aut, impedit accusantium.</p>
     </header>
+    <main>
+        <section class="main-section">
+            <header class="title">
+                    <img src="./img/month_move.gif" alt="">
+                    <em>오늘의 키키오</em>
+            </header>
+            <span>11월 5일 금요일 소식입니다</span>
+        </section>
+    </main>
 </body>
 </html>
