@@ -30,8 +30,12 @@ a {
 	padding: 0 25px;
 }
 
-.menu li:hover {
-	opacity: 50%;
+.menu:hover li a {
+	color:gainsboro
+}
+
+.menu li:hover a{
+	color: black;
 }
 
 .icon {
@@ -59,19 +63,16 @@ a {
 	font-size: 20px;
 }
 
-main {
+.main-content {
 	width: 1296px;
 	margin: 0 auto;
 }
 
-.main-section {
+.title {
 	padding-top: 96px;
 	font-size: 45px;
 	font-weight: bold;
 	letter-spacing: -4px;
-}
-
-.title {
 	display: flex;
 	margin-bottom: 8px;
 }
@@ -80,7 +81,121 @@ main {
 	width: 70px;
 }
 
-.title em {
+.title h3 {
 	line-height: 70px;
 	padding-left: 10px;
+}
+
+.main-content p {
+	font-size: 45px;
+	font-weight: bold;
+	letter-spacing: -4px;
+}
+
+.content {
+	padding-top: 96px
+}
+
+.first-news {
+	width: 630px;
+	height: 700px;
+	border: 1px solid #eee;
+	border-radius: 2%;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	padding: 25px 24px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.sub-txt {
+	display: flex;
+	justify-content: center;
+}
+
+.megaphone {
+	display: flex;
+	flex-grow: 1;
+}
+
+.megaphone img {
+	width: 36px;
+	margin-right: 8px;
+}
+
+.txt-box {
+	font-size: 13px;
+	line-height: 34px;
+	background-color: #eee;
+	height: 34px;
+	padding: 0 13px;
+	border-radius: 13px;
+	position: relative;
+	letter-spacing: -2px;
+}
+
+.txt-box::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #eee;
+	left: -4px;
+	border-radius: 0 15px 0 0;
+	z-index: -1;
+	transform: rotate(5deg);
+}
+
+.txt-box::after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: rgb(255, 255, 255);
+	left: -12px;
+	top: 1px;
+	transform: rotate(40deg);
+	border-radius: 0 15px 0 0;
+	z-index: -1;
+}
+
+.sub-txt button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	line-height: 34px;
+	margin-left: 15px;
+}
+
+.bi-three-dots-vertical {
+	font-size: 18px;
+	color: rgb(202, 202, 202);
+}
+
+.first-news a {
+	display: block;
+	margin-top: 15px;
+}
+
+.news-title-1 {
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 46px;
+	margin-right: 50px;
+}
+
+.news-tag-1 {
+	display: block;
+	margin: 24px 0;
+	font-size: 13px;
+	color: #727272;
+	cursor: text;
+}
+
+.news-img-1 {
+	position: absolute;
+	margin: 0 -24px;
+	height: 100%;
 }
