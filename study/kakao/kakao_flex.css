@@ -198,7 +198,7 @@ main {
 	margin-right: 50px;
 }
 
-.news-tag-1 {
+.news-tag-1, .news-tag-4 {
 	display: block;
 	margin: 24px 0;
 	font-size: 13px;
@@ -258,4 +258,8 @@ main {
 	font-weight: bold;
 	letter-spacing: -2px;
 	line-height: 32px;
+}
+
+.news-tag-4 {
+	margin-top: 60px;
 }
