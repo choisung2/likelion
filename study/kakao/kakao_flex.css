@@ -1,6 +1,10 @@
-a {
-	text-decoration: none;
-	color: black;
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .gnb {
@@ -63,16 +67,19 @@ a {
 	font-size: 20px;
 }
 
-.main-content {
+main {
 	width: 1296px;
 	margin: 0 auto;
 }
 
-.title {
+.content-title {
 	padding-top: 96px;
 	font-size: 45px;
 	font-weight: bold;
 	letter-spacing: -4px;
+}
+
+.title {
 	display: flex;
 	margin-bottom: 8px;
 }
@@ -92,15 +99,20 @@ a {
 	letter-spacing: -4px;
 }
 
-.content {
+.main-content {
 	padding-top: 96px
+}
+
+.main-news {
+	display: flex;
+	justify-content: space-between;
 }
 
 .first-news {
 	width: 630px;
 	height: 700px;
 	border: 1px solid #eee;
-	border-radius: 2%;
+	border-radius: 14px;
 	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
 	padding: 25px 24px;
 	box-sizing: border-box;
@@ -172,7 +184,7 @@ a {
 	color: rgb(202, 202, 202);
 }
 
-.first-news a {
+.first-news a, .second-news a, .third-news a, .fourth-news a {
 	display: block;
 	margin-top: 15px;
 }
@@ -197,5 +209,53 @@ a {
 .news-img-1 {
 	position: absolute;
 	margin: 0 -24px;
-	height: 100%;
+	width: 120%;
+	height: 120%;
+	background-color: #FAE100;
+}
+
+.sub-news {
+	width: 630px;
+	height: 870px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.sub-news .second-news, .sub-news .fourth-news {
+	width: 297px;
+	height: 420px;
+	border: 1px solid #eee;
+	border-radius: 14px;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	padding: 25px 24px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.sub-news .third-news {
+	width: 297px;
+	height: 192px;
+	border: 1px solid #eee;
+	border-radius: 14px;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	padding: 25px 24px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.second-news a {
+	display: block;
+	margin-top: 15px;
+}
+
+.news-title-2, .news-title-3, .news-title-4 {
+	display: block;
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 32px;
 }

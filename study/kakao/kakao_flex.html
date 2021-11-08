@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
 </head>
 <body>
-    <header class="main-header">        
+    <h1 class="sr-only">카카오</h1>
+    <header class="main-header">   
+        <h2 class="sr-only">카카오 오늘의 소식</h2>     
         <nav class="gnb">
-            <a href="#"><img src="./img/kakao.png" class="logo alt="kakao"></a>
+            <a href="#"><img src="./img/kakao.png" class="logo" alt="kakao"></a>
             <ul class="menu">
                 <li><a href="#">키키오</a></li>
                 <li><a href="#">뉴스</a></li>
@@ -30,37 +32,77 @@
         </nav>
     </header>
     <main>
-        <section>
-            <!-- <h2>content</h2> -->
-            <article class="main-content">
-                <header class="title">
-                    <img src="./img/month_move.gif" alt="">
-                    <h3>오늘의 키키오<h3>
-                </header>
-                <p>11월 5일 금요일 소식입니다</p>
-                <div class="content">
-                    <div class="main-news">
-                        <div class="first-news">
-                            <div class="sub-txt">
-                                <div class="megaphone">
-                                    <img src="./img/megaphone.png" alt="">
-                                    <span class="txt-box">보도자료</span>
-                                </div>
-                                <button><i class="bi bi-three-dots-vertical"></i></button>
-                            </div>
-                            <a href="#">
-                                <strong class="news-title-1">키키오엔터테인먼트, 키키시 주최 '2021 키키웹툰공모전 단독 후원사로 참여</strong>
-                                <span class="news-tag-1">#키키오엔터테인먼트 #키키오페이지 #키키시</span>
-                                <div class="news-img-1-p">
-                                    <img class="news-img-1" src="./img/01.png" alt="">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </article>
+        <section class="content-title">
+            <h2 class="sr-only">홈 본문</h2>
+            <div class="title">
+                <img src="./img/month_move.gif" alt="n월 n일">
+                <h3>오늘의 키키오<h3>
+            </div>
+            <span>11월 5일 금요일 소식입니다</span>
         </section>
+        <section class="main-content">
+            <h2 class="sr-only">메인 뉴스</h2>
+            <section class="main-news">
+                <article class="first-news">
+                    <ul class="sub-txt">
+                        <li class="megaphone">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="news-title-1">키키오엔터테인먼트, 키키시 주최 '2021 키키웹툰공모전 단독 후원사로 참여</strong>
+                        <span class="news-tag-1">#키키오엔터테인먼트 #키키오페이지 #키키시</span>
+                        <div class="news-img-1">
+                        </div>
+                    </a>
+                </article>
+                <section class="sub-news">
+                    <article class="second-news">
+                        <ul class="sub-txt">
+                            <li class="megaphone">
+                                <img src="./img/megaphone.png" alt="">
+                                <span class="txt-box">보도자료</span>
+                            </li>
+                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                        </ul>
+                        <a href="#">
+                            <strong class="news-title-2">키키오재팬, 키키오픽코마로 사명 변경하고 프랑스 진출...</strong>
+                            <span class="news-tag-1">#글로벌진출 #키키오재팬</span>
+                            <div class="news-img-1"></div>
+                        </a>
+                    </article>
+                    <article class="third-news">
+                        <ul class="sub-txt">
+                            <li class="megaphone">
+                                <img src="./img/megaphone.png" alt="">
+                                <span class="txt-box">주가정보</span>
+                            </li>
+                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                        </ul>
+                        <a href="#">
+                            <strong class="news-title-3">키키오엔터테인먼트, 키키시 주최 '2021 키키웹툰공모전 단독 후원사로 참여</strong>
+                            <span class="news-tag-1">#키키오엔터테인먼트 #키키오페이지 #키키시</span>
+                        </a>
+                    </article>
+                    <article class="fourth-news">
+                        <ul class="sub-txt">
+                            <li class="megaphone">
+                                <img src="./img/megaphone.png" alt="">
+                                <span class="txt-box">투자정보</span>
+                            </li>
+                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                        </ul>
+                        <a href="#">
+                            <strong class="news-title-4">2021년 3분기 실적발표</strong>
+                            <span class="news-tag-1">#키키오 실적 #키키오 3분기 실적</span>
+                            <div class="news-img-1"></div>
+                        </a>
+                    </article>
+                </section>
+            </section>
+        </section>     
     </main>
 </body>
 </html>
