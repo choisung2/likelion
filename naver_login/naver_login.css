@@ -80,10 +80,12 @@
     .info {
         font-size: 12px;
         margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .id-pw {
-        float: left;
+        display: flex;
     }
 
     .id-pw::before {
@@ -95,11 +97,11 @@
         background-image: url('./img/lock.png');
         background-repeat: no-repeat;
         background-size: contain;
-        float: left;
+     
     }
 
     .join {
-        float: right;
+        display: flex;
         margin-right: 4px;
     }
 
@@ -112,5 +114,4 @@
         background-image: url('./img/user.png');
         background-repeat: no-repeat;
         background-size: contain;
-        float: left;
     }
