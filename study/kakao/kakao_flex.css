@@ -1,3 +1,8 @@
+/* position: absoulte tag 올리자 */
+/* @font-face > 폰트! */
+/* body > height: vh 배로! */
+/* nomal c ss */
+
 .sr-only {
     position: absolute;
     left: -9999px;
@@ -118,6 +123,9 @@ main {
 	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 4px;
 }
 
 .sub-txt {
@@ -184,7 +192,7 @@ main {
 	color: rgb(202, 202, 202);
 }
 
-.first-news a, .second-news a, .third-news a, .fourth-news a {
+.first-news a, .second-news a, .third-news a, .fourth-news a, .fifth-news a {
 	display: block;
 	margin-top: 15px;
 }
@@ -218,12 +226,14 @@ main {
 	width: 630px;
 	height: 870px;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
+
 }
 
-.sub-news .second-news, .sub-news .fourth-news {
+.second-news, .fourth-news, .fifth-news {
 	width: 297px;
 	height: 420px;
 	border: 1px solid #eee;
@@ -235,7 +245,7 @@ main {
 	overflow: hidden;
 }
 
-.sub-news .third-news {
+.third-news, .sixth-news {
 	width: 297px;
 	height: 192px;
 	border: 1px solid #eee;
@@ -260,6 +270,52 @@ main {
 	line-height: 32px;
 }
 
+.news-title-5 {
+	display: block;
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 32px;
+}
+
 .news-tag-4 {
 	margin-top: 60px;
+}
+
+.stock {
+	display: flex;
+}
+
+.news-title-3 {
+	position: relative;
+	font-size: 40px;
+	letter-spacing: 1px;
+	padding-bottom: 21px;
+}
+
+.news-title-3::after {
+	content: '▼3500';
+	font-size: 14px;
+	color: #4e7edf;
+	position: absolute;
+	left: 170px;
+}
+
+.news-title-6 {
+	display: block;
+	margin-top: 10px;
+	width: 220px;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	line-height: 32px;
+}
+
+.box {
+	width: 1296px;
+	height: 540px;
+	border: 1px solid #eee;
+	border-radius: 14px;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	margin-top: 30px;
 }
