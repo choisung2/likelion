@@ -28,154 +28,139 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
-.sr-only {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-/* style */
+/* */
 
 body {
-    background: #5B2386;
-}
-
-.title {
-    margin-bottom: 50px;
-}
-
-.title-img {
-    width: 564px;
-    height: 265px;
-    margin: 50px auto 0;
-}
-
-.title-img::before {
-    content: '';
-    position: absolute;
-    width: 564px;
-    height: 112px;
-    background-image: url('../img/title.png');
-    background-size: 564px;
-    top: 124px;
-}   
-
-.title-back-img {
-    display: block;
-    margin: 0 auto;
-}
-
-.info {
+    background-color: #5b2386;
+    font-family: 'GmarketSansMedium';
+    color: white;
     text-align: center;
 }
 
-.info h3 {
-    font-size: 36px;
-    font-family: 'OTEnjoystoriesBA';
-    margin-bottom: 50px;
-    color: #F5DF4D;
-}
-
-.quotes {
+.tit {
+    margin: 124px 0;
     position: relative;
 }
 
-.quotes-img {
+.tit::after {
+    margin: -130px 0 0 -130px;
     position: absolute;
+    content: '';
+    background-image: url('../img/clock.png');
+    background-size: cover;
+    width: 265px;
+    height: 265px;
+    top: 50%;
+    left: 50%;
 }
 
-.quotes-txt {
-    font-family: 'GmarketSansMedium';
-    font-size: 17px;
-    color: white;
-    top: 10px;
-    left: 41%;
-    line-height: 30px;
+.tit .img-tit {
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
-.quotes-txt em {
+.img-quo {
+    margin: 0 auto 50px;
+}
+
+.txt-quo {
+    position: relative;
+    font-size: 18px;
+    line-height: 34px;
+    width: 485px;
+    margin: 0 auto 97px;
+}
+
+.txt-quo::before, .txt-quo::after {
+    position: absolute;
+    content: '';
+    width: 37px;
+    height: 32px;
+    top: 25%;
+    display: block;
+}
+
+.txt-quo::before {
+    background-image: url('../img/“.png');
+}
+
+.txt-quo::after {
+    right: 0;
+    background-image: url('../img/”.png');
+}
+
+.txt-quo strong {
     font-size: 20px;
     font-family: 'GmarketSansBold';
 }
 
-.input-text {
-    text-align: center;
-    margin: 80px 0 90px;
+.txt-inp, .txt-result {
     font-size: 20px;
-    color: white;
-    line-height: 80px;
-    font-family: 'GmarketSansMedium';
 }
 
-.input-text input {
-    padding: 15px 20px;
+.txt-inp .txt-want {
+    margin-bottom: 20px;
+}
+
+.txt-inp .txt-want input, .txt-inp .txt-time input {
     margin: 0 15px;
-    border-radius: 10px;
+    padding: 15px 20px;
     border: none;
+    border-radius: 7px;
     font-size: 20px;
-    color: #d6d6d6;
     font-family: 'GmarketSansMedium';
     width: 200px;
 }
 
-.btn {
+.txt-inp .btn-result, .txt-result .btn-go, .txt-result .btn-share {
+    margin: 110px 0 100px 0;
     padding: 10px 40px;
+    position: relative;
+    font-size: 20px;
     border: none;
-    border-radius: 30px;
-    font-size: 20px;
+    border-radius: 50px;
     font-family: 'GmarketSansBold';
+    background-color: #FCEE21;
+    color: #5b2386;
     cursor: pointer;
-    margin: 50px auto 80px;
-    color: #5B2386;
 }
 
-.result-btn {
-    width: 480px;
-    background: #FCEE21;
-    display: block;
-    margin: 50px auto 130px;
+.txt-inp .btn-result::after {
+    position: absolute;
+    content: '';
+    background-image: url('../img/click.png');
+    width: 64px;
+    height: 72px;
+    left: 50%;
+    margin-left: 250px;
 }
 
-.result {
-    font-size: 20px;
-    color: white;
-    line-height: 80px;
-    font-family: 'GmarketSansMedium';
+.txt-result strong {
+    padding: 0 15px;
+    font-size: 70px;
+    vertical-align: middle;
+    font-family: 'GmarketSansBold';
 }
 
-.result p {
-    text-align: center;
+.txt-result .txt-want {
+    margin-bottom: 35px;
 }
 
-.bold-font {
-    font-size: 72px;
-    font-weight: 700;
-}
-
-.tr-btn {
-    background: #FCEE21;
-    margin-right: 50px;
-    
-}
-
-.end-btn {
-    display: flex;
-    justify-content: center;
-    line-height: 70px;
+.txt-result .btn-share {
+    margin-left: 20px;
+    background-color: white;
+    line-height: 32px;
 }
 
 footer {
-    font-size: 12px;
-    line-height: 17.38px;
-    margin-bottom: 70px; 
-    color: white;
-    text-align: center;
-    font-family: 'GmarketSansMedium';
+    padding: 0 0 70px;
+    font-size: 10px;
+    line-height: 15px;
+    font-family: 'Noto Sans KR';
 }
 
-footer img {
-    margin: 50px 0 30px;
+footer .img-footer {
+    margin: 0 auto 20px;
 }
+
