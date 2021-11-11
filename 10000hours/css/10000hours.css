@@ -84,12 +84,10 @@ body {
 }
 
 .quotes-img {
-    /* display: block; */
-    margin: 20px auto;
+    position: absolute;
 }
 
 .quotes-txt {
-    position: absolute;
     font-family: 'GmarketSansMedium';
     font-size: 17px;
     color: white;
@@ -123,16 +121,61 @@ body {
     width: 200px;
 }
 
-.result-btn {
-    width: 480px;
+.btn {
     padding: 10px 40px;
-    background: #FCEE21;
     border: none;
     border-radius: 30px;
     font-size: 20px;
     font-family: 'GmarketSansBold';
-    color: #5B2386;
     cursor: pointer;
+    margin: 50px auto 80px;
+    color: #5B2386;
+}
+
+.result-btn {
+    width: 480px;
+    background: #FCEE21;
     display: block;
-    margin: 50px auto;
+    margin: 50px auto 130px;
+}
+
+.result {
+    font-size: 20px;
+    color: white;
+    line-height: 80px;
+    font-family: 'GmarketSansMedium';
+}
+
+.result p {
+    text-align: center;
+}
+
+.bold-font {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.tr-btn {
+    background: #FCEE21;
+    margin-right: 50px;
+    
+}
+
+.end-btn {
+    display: flex;
+    justify-content: center;
+    line-height: 70px;
+}
+
+footer {
+    font-size: 12px;
+    line-height: 17.38px;
+    margin-bottom: 70px; 
+    color: white;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+}
+
+footer img {
+    margin: 50px 0 30px;
 }
