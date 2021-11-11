@@ -1,6 +1,8 @@
 /* position: absoulte tag 올리자 */
-/* @font-face > 폰트! */
 /* body > height: vh 배로! */
+
+/* grid */
+
 
 .sr-only {
     position: absolute;
@@ -191,7 +193,7 @@ main {
 	color: rgb(202, 202, 202);
 }
 
-.first-news a, .second-news a, .third-news a, .fourth-news a, .fifth-news a {
+.first-news a, .second-news a, .third-news a, .fourth-news a, .fifth-news a, .first-news-1 a{
 	display: block;
 	margin-top: 15px;
 }
@@ -325,7 +327,7 @@ main {
 	border: 1px solid #eee;
 	border-radius: 14px;
 	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
-	margin-top: 36px;
+	margin: 36px 0;
 }
 
 .big-content-tit {
@@ -362,4 +364,88 @@ main {
 	width: 900px;
 	height: 240px;
 	margin: 54px auto;
+}
+
+.main-content-2 {
+	width: 1296px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	align-content: space-between;
+	margin-bottom: 150px;
+}
+
+.first-news-1 {
+	width: 630px;
+	height: 700px;
+	border: 1px solid #eee;
+	border-radius: 14px;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	padding: 25px 24px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	top: 4px;
+}
+
+.txt-box-1 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 34px;
+	background-color: #FEE102;
+	padding: 10px 25px;
+	border-radius: 13px;
+	position: relative;
+	letter-spacing: -2px;
+	cursor: default;
+}
+
+.txt-box-1::before {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #FEE102;
+	left: -5px;
+	top: 2px;
+	border-radius: 0 15px 0 0;
+	z-index: -1;
+	transform: rotate(5deg);
+}
+
+.txt-box-1::after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: #ffffff;
+	left: -12px;
+	transform: rotate(34deg);
+	border-radius: 0 15px 0 0;
+	z-index: -1;
+}
+
+.txt-box-2 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}
+.txt-box-2 li {
+	font-size: 15px;
+	background-color: #eee;
+	height: 42px;
+	padding: 0 20px;
+	border-radius: 13px;
+	letter-spacing: -2px;
+}
+
+.txt-box-2 a {
+	color: #666;
+}
+
+.bin {
+	width: 297px;
+	height: 26px;
 }
