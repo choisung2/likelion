@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-M';
+    src: url('./fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-B';
+    src: url('./fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+    font-size: normal;
+    font-weight: normal;
+}
+
+/*  */
+
+#modal {
+    width: 520px;
+    margin: 80px auto;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    font-family: 'SpoqaHanSansNeo-B';
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 16px;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0 18px 0;
+    line-height: 20.03px;
+    text-align: center;
+}
+
+.cont {
+    padding: 24px;
+    position: relative;
+}
+
+.txt {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 2px 0 24px 0;
+}
+
+.form-inp {
+    font-size: 16px;
+    color: #767676;
+    font-family: 'SpoqaHanSansNeo-M';
+}
+
+.id-inp, .pw-inp {
+    display: block;
+    width: 456px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 15px 0 15px 16px;
+    
+    
+}
+
+.check-inp {
+    margin: 12px 8px 21px 0;
+    font-family: 'SpoqaHanSansNeo-M';
+    width: 20px;
+
+}
+
+.btn-login, .btn-account {
+    background-color: #2F80ED;
+    width: 472px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+    border: 1px solid #2F80ED;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.info {
+    font-size: 14px;
+    line-height: 17.53px;
+    color: #767676;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0 30px;
+    font-family: 'SpoqaHanSansNeo-M';
+    
+}
+
+.info .join-info {
+    display: inline-block;
+    border-right: 2px solid #7676768e;
+    line-height: 12px;
+    padding-right: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.info .find-info {
+    cursor: pointer;
+}
+
+.div-line {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #767676;
+    font-family: 'SpoqaHanSansNeo-M';
+
+}
+
+.div-line::before {
+    position: absolute;
+    content: '';
+    border-top: 1px solid #7676768e;
+    width: 210px;
+    top: 57%;
+    left: 5%;
+}
+
+.div-line::after {
+    position: absolute;
+    content: '';
+    border-top: 1px solid #7676768e;
+    width: 210px;
+    top: 57%;
+    right: 5%;
+}
+
+.btn-account {
+    background: white;
+    margin-top: 10px;
+    color: #767676;
+    font-size: 16px;
+    line-height: 20.03px;
+    position: relative;
+    font-family:'SpoqaHanSansNeo-M';
+
+}
+
+.btn-gogle {
+    border-color: #767676;
+}
+
+.btn-gogle::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-image: url('./img/google.png');
+    background-size: cover;
+    top: 28%;
+    left: 3%;
+}
+
+.btn-facebook {
+    border-color: #2D9CDB;
+}
+
+.btn-facebook::before {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 24px;
+    background-image: url('./img/facebook.png');
+    background-size: 12px 24px;
+    background-repeat: no-repeat;
+    top: 28%;
+    left: 4%;
+}
+
+.btn-naver {
+    border-color: #00BF18;
+}
+
+.btn-naver::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-image: url('./img/naver.png');
+    background-size: cover;
+    top: 28%;
+    left: 3%;
+}
+
+.btn-kakaotalk {
+    border-color: #F2C94C;
+}
+
+.btn-kakaotalk::before {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 21px;
+    background-image: url('./img/kakao.png');
+    background-size: cover;
+    top: 28%;
+    left: 3%;
+}
+
+
