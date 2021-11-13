@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="sr-only">카카오</h1>
+    <header id="page-header">
+        <h1 class="sr-only">키키오</h1>
         <nav class="gnb">
-            <a href="#"><img src="./img/kakao.png" class="logo" alt=""></a>
+            <a href="#"><img src="./img/kakao.png" class="logo-img" alt=""></a>
             <h2 class="sr-only">메인 메뉴</h2>
             <ul class="menu">
                 <li><a href="#">키키오</a></li>
@@ -31,110 +31,105 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="content-title">
+    <main id="page-main">
+        <section class="tit-main">
             <h2 class="sr-only">홈 본문</h2>
-            <div class="title">
+            <div class="tit">
                 <img src="./img/month_move.gif" alt="">
                 <h3>오늘의 키키오<h3>
             </div>
             <span>11월 9일 화요일 소식입니다</span>
         </section>
-        <section class="main-content">
+        <section class="cont-wrap">
             <h2 class="sr-only">메인 뉴스</h2>
-            <div class="main-news">
-                <article class="news first-news">
-                    <ul class="sub-txt">
-                        <li class="megaphone">
+            <div class="item-wrap">
+                <article class="item item-big item-sticky">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box txt-new">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오엔터테인먼트, 키키시 주최 '2021 키키웹툰공모전 단독 후원사로 참여</strong>
+                        <span class="item-tag">#키키오엔터테인먼트 #키키오페이지 #키키시</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+            </div>
+            <div class="item-wrap"> 
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
                             <img src="./img/megaphone.png" alt="">
                             <span class="txt-box">보도자료</span>
                         </li>
                         <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
                     </ul>
                     <a href="#">
-                        <strong class="news-title-1">키키오엔터테인먼트, 키키시 주최 '2021 키키웹툰공모전 단독 후원사로 참여</strong>
-                        <span class="news-tag-1">#키키오엔터테인먼트 #키키오페이지 #키키시</span>
-                        <div class="news-img-1">
-                        </div>
+                        <strong class="item-tit">키키오재팬, 키키오픽코마로 사명 변경하고 프랑스 진출...</strong>
+                        <span class="item-tag">#글로벌진출 #키키오재팬</span>
+                        <div class="item-img"></div>
                     </a>
                 </article>
-                <section class="sub-news">
-                    <article class="news second-news">
-                        <ul class="sub-txt">
-                            <li class="megaphone">
-                                <img src="./img/megaphone.png" alt="">
-                                <span class="txt-box">보도자료</span>
-                            </li>
-                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                        </ul>
-                        <a href="#">
-                            <strong class="news-title-2">키키오재팬, 키키오픽코마로 사명 변경하고 프랑스 진출...</strong>
-                            <span class="news-tag-1">#글로벌진출 #키키오재팬</span>
-                            <div class="news-img-1"></div>
-                        </a>
-                    </article>
-                        <article class="news fourth-news">
-                            <ul class="sub-txt">
-                                <li class="megaphone">
-                                    <img src="./img/chart.png" alt="">
-                                    <span class="txt-box">투자정보</span>
-                                </li>
-                                <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                            </ul>
-                            <a href="#">
-                                <strong class="news-title-4">2021년 3분기 실적발표</strong>
-                                <span class="news-tag-4">#키키오 실적 #키키오 3분기 실적</span>
-                                <div class="news-img-1"></div>
-                            </a>
-                        </article>
-                    <article class="news third-news">
-                        <ul class="sub-txt">
-                            <li class="megaphone">
-                                <img src="./img/chart.png" alt="">
-                                <span class="txt-box">주가정보</span>
-                            </li>
-                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                        </ul>
-                        <a href="#">
-                            <strong class="news-title-3">125,000</strong>
-                            <span class="news-tag-1">2021.11.08 21:01PM</span>
-                        </a>
-                    </article>
-                    <article class="news fourth-news">
-                        <ul class="sub-txt">
-                            <li class="megaphone">
-                                <img src="./img/megaphone.png" alt="">
-                                <span class="txt-box">보도자료</span>
-                            </li>
-                            <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                        </ul>
-                        <a href="#">
-                            <strong class="news-title-5">키키오, 2021년 3분기 연결 매출 1조7,408억원...</strong>
-                            <span class="news-tag-1">#키키오 실적 #키키오 3분기 실적</span>
-                            <div class="news-img-1"></div>
-                        </a>
-                    </article>
-                    <article class="news sixth-news">
-                        <div class="sub-txt">
-                            <div class="megaphone">
-                                <img src="./img/responsible.png" alt="">
-                                <span class="txt-box">약속과책임</span>
-                            </div>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/chart.png" alt="">
+                            <span class="txt-box">투자정보</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">2021년 3분기 실적발표</strong>
+                        <span class="item-tag">#키키오 실적 #키키오 3분기 실적</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <article class="item item-small">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/chart.png" alt="">
+                            <span class="txt-box">주가정보</span>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-stock">125,000</strong>
+                        <span class="item-tag">2021.11.08 21:01PM</span>
+                    </a>
+                </article>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오, 2021년 3분기 연결 매출 1조7,408억원...</strong>
+                        <span class="item-tag">#키키오 실적 #키키오 3분기 실적</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <article class="item item-small">
+                    <div class="item-info">
+                        <div class="item-type">
+                            <img src="./img/responsible.png" alt="">
+                            <span class="txt-box">약속과책임</span>
                         </div>
-                        <a href="#">
-                            <strong class="news-title-6">키키오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
-                            <span class="news-tag-1">#약속과책임 #esg #소셜임팩트</span>
-                        </a>
-                    </article>
-                </section>
-            </div>
-            <div class="box">
-            
+                    </div>
+                    <a href="#">
+                        <strong class="item-tit">키키오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+                        <span class="item-tag">#약속과책임 #esg #소셜임팩트</span>
+                    </a>
+                </article>
             </div>
         </section>
-        <section class="wrap-big-content">
-            <strong class="big-content-tit">기술과 사람으로 더 나은 세상을 만듭니다.</strong>
-            <button class="big-content-btn">
+        <section class="culture-wrap">
+            <strong class="culture-txt">기술과 사람으로 더 나은 세상을 만듭니다.</strong>
+            <button class="culture-btn">
                 키키오문화 바로가기
                 <svg data-v-d93d847a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" class="ico_arr" contenteditable="false">
                 <g data-v-d93d847a="" fill="none" fill-rule="evenodd">
@@ -158,82 +153,112 @@
                 </g>
                 </svg>
             </button>
-            <div class="img-4"></div>
+            <div class="culture-img"></div>
         </section>
-        <section class="main-content-2">
-            <article class="news third-news mo">
-                <div class="sub-txt">
-                    <div class="megaphone">
-                        <img src="./img/customer.png" alt="">
-                        <span class="txt-box">고객센터</span>
+        <section class="cont-wrap">
+            <div class="item-wrap item-wrap-long">
+                <article class="item item-small">
+                    <div class="item-info">
+                        <div class="item-type">
+                            <img src="./img/customer.png" alt="">
+                            <span class="txt-box">고객센터</span>
+                        </div>
                     </div>
-                </div>
-                <a href="#">
-                    <span class="txt-box-1">어떤 서비스를 도와드릴까요?</span>
-                    <ul class="txt-box-2">
-                        <li><a href="#">카카오</a></li>
-                        <li><a href="#">다음</a></li>
-                        <li><a href="#">멜론</a></li>
+                    <a href="#">
+                        <span class="item-help">어떤 서비스를 도와드릴까요?</span>
+                        <ul class="item-site">
+                            <li><a href="#">카카오</a></li>
+                            <li><a href="#">다음</a></li>
+                            <li><a href="#">멜론</a></li>
+                        </ul>
+                    </a>
+                </article>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
                     </ul>
-                </a>
-            </article>
-            <div class="bin"></div>
-            <article class="news second-news mo">
-                <ul class="sub-txt">
-                    <li class="megaphone">
-                        <img src="./img/megaphone.png" alt="">
-                        <span class="txt-box">보도자료</span>
-                    </li>
-                    <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                </ul>
-                <a href="#">
-                    <strong class="news-title-2">키키오브레인, AI 주니어 육성 프로그램 1기 모집</strong>
-                    <span class="news-tag-1">#키키오브레인 #ai #채용</span>
-                    <div class="news-img-1"></div>
-                </a>
-            </article>
-            <article class="news second-news">
-                <ul class="sub-txt">
-                    <li class="megaphone">
-                        <img src="./img/megaphone.png" alt="">
-                        <span class="txt-box">보도자료</span>
-                    </li>
-                    <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                </ul>
-                <a href="#">
-                    <strong class="news-title-2">키키오, 한국기업지배구조원 ESG경영 평가 A등급 획득</strong>
-                    <span class="news-tag-1">###ESG ###ESG경영</span>
-                    <div class="news-img-1"></div>
-                </a>
-            </article>
-            <div class="bin"></div>
-            <article class="news sixth-news">
-                <div class="sub-txt">
-                    <div class="megaphone">
-                        <img src="./img/privacy.png" alt="">
-                        <span class="txt-box">키키오 프라이버시</span>
+                    <a href="#">
+                        <strong class="item-tit">키키오브레인, AI 주니어 육성 프로그램 1기 모집</strong>
+                        <span class="item-tag">#키키오브레인 #ai #채용</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오, 한국기업지배구조원 ESG경영 평가 A등급 획득</strong>
+                        <span class="item-tag">###ESG ###ESG경영</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오, 한국기업지배구조원 ESG경영 평가 A등급 획득</strong>
+                        <span class="item-tag">###ESG ###ESG경영</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <article class="item item-mid">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오, 한국기업지배구조원 ESG경영 평가 A등급 획득</strong>
+                        <span class="item-tag">###ESG ###ESG경영</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+                <div class="bin"></div>
+                <article class="item item-small">
+                    <div class="item-info">
+                        <div class="item-type">
+                            <img src="./img/lock.png" alt="">
+                            <span class="txt-box">키키오 프라이버시</span>
+                        </div>
                     </div>
-                </div>
-                <a href="#">
-                    <strong class="news-title-6">데이터의 연결과 보호의 균형을 위한 키키오의 노력</strong>
-                    <span class="news-tag-1">#키키오프라이버시</span>
-                </a>
-            </article>
-            <article class="news first-news-1">
-                <ul class="sub-txt">
-                    <li class="megaphone">
-                        <img src="./img/megaphone.png" alt="">
-                        <span class="txt-box">보도자료</span>
-                    </li>
-                    <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
-                </ul>
-                <a href="#">
-                    <strong class="news-title-1">키키오, 'if(kakao) 2021' 컨퍼런스 개최앞서 공식 홈페이지에 세션 공개</strong>
-                    <span class="news-tag-1">#키키오 #이프키키오 #컨퍼런스 #세션공개</span>
-                    <div class="news-img-1">
-                    </div>
-                </a>
-            </article>
+                    <a href="#">
+                        <strong class="item-tit">데이터의 연결과 보호의 균형을 위한 키키오의 노력</strong>
+                        <span class="item-tag">#키키오프라이버시</span>
+                    </a>
+                </article>
+            </div>
+            <div class="item-wrap item-wrap-long">
+                <article class="item item-big item-sticky">
+                    <ul class="item-info">
+                        <li class="item-type">
+                            <img src="./img/megaphone.png" alt="">
+                            <span class="txt-box">보도자료</span>
+                        </li>
+                        <li><button><i class="bi bi-three-dots-vertical"></i></button></li>
+                    </ul>
+                    <a href="#">
+                        <strong class="item-tit">키키오, 'if(kakao) 2021' 컨퍼런스 개최앞서 공식 홈페이지에 세션 공개</strong>
+                        <span class="item-tag">#키키오 #이프키키오 #컨퍼런스 #세션공개</span>
+                        <div class="item-img"></div>
+                    </a>
+                </article>
+            </div>
         </section>
     </main>
 </body>
