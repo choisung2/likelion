@@ -57,18 +57,70 @@ h1 {
     margin-bottom: 10px;
     font-size: 16px;
     padding: 15px 0 15px 16px;
-    
-    
+    font-family: 'SpoqaHanSansNeo-M';  
 }
 
-.check-inp {
-    margin: 12px 8px 21px 0;
-    font-family: 'SpoqaHanSansNeo-M';
-    width: 20px;
-
+.id-inp:focus, .pw-inp:focus {
+    outline-color: red;
 }
 
-.btn-login, .btn-account {
+.id-hid, .pw-hid {
+    display: none;
+    font-size: 14px;
+    margin: 6px 0 10px 2px;
+    color: red;
+}
+
+.id-inp:focus + .id-hid, .pw-inp:focus + .pw-hid {
+    display: block;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    margin: 17px 0 21px;
+    line-height: 23px;
+}
+
+.checkbox .check-inp {
+    display: none;
+}
+
+.checkbox .check-on {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #767676;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background: no-repeat center;
+    background-image: url('./img/check.png');
+}
+
+.checkbox .check-inp:checked + .check-on {
+    background: #2F80ED;
+}
+
+.check-on::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    display: none;
+    width: 22px;
+    height: 22px;
+    background: no-repeat center;
+    background-image: url('./img/check-white.png');
+}
+
+.checkbox .check-inp:checked + .check-on::after {
+    display: block;
+}
+
+.btn-login, .btn {
     background-color: #2F80ED;
     width: 472px;
     height: 50px;
@@ -135,7 +187,7 @@ h1 {
     right: 5%;
 }
 
-.btn-account {
+.btn {
     background: white;
     margin-top: 10px;
     color: #767676;
