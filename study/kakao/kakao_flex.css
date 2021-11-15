@@ -1,5 +1,5 @@
 body {
-	height: 5000px;
+	height: 1000vh;
 }
 
 .gnb {
@@ -63,11 +63,13 @@ body {
 }
 
 #page-main {
-	width: 1296px;
+	max-width: 1334px;
 	margin: 0 auto;
 }
 
 .tit-main {
+	max-width: 1296px;
+	margin: 0 auto;
 	padding: 96px 0;
 	font-size: 45px;
 	font-weight: bold;
@@ -90,18 +92,18 @@ body {
 
 .cont-wrap {
 	display: flex;
-	justify-content: space-between;
-	
 }
 
 .item-wrap {
-	width: 630px;
+	flex: 1;
 	height: 870px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
+	position: relative;
+	margin: 0 18px;
 
 }
 
@@ -110,7 +112,7 @@ body {
 	border: 1px solid #eee;
 	border-radius: 14px;
 	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
-	padding: 25px 24px;
+	/* padding: 25px 24px; */
 	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
@@ -189,15 +191,17 @@ body {
 	border-radius: 100%;
 }
 
-.item-info button {
+.cont-wrap button {
+	position: absolute;
+	content: '';
+	top: 30px;
+	right: 7px;
 	background-color: transparent;
 	border: 0;
 	cursor: pointer;
-	line-height: 34px;
-	margin-left: 15px;
 }
 
-.item-info button .bi-three-dots-vertical {
+.cont-wrap button .bi-three-dots-vertical {
 	font-size: 18px;
 	color: rgb(202, 202, 202);
 }
@@ -217,22 +221,21 @@ body {
 }
 
 .item-tag {
+	position: absolute;
+	content: '';
 	display: block;
 	margin: 24px 0;
 	font-size: 13px;
 	color: #727272;
-	cursor: text;
 }
 
 .item-img {
 	position: absolute;
-	margin: 0 -24px;
+	margin: 60px -24px;
 	width: 120%;
 	height: 120%;
 	background-color: #FAE100;
 }
-
-
 
 .item-mid {
 	width: 297px;
@@ -294,12 +297,11 @@ body {
 }
 
 .culture-wrap {
-	width: 1296px;
 	height: 540px;
 	border: 1px solid #eee;
 	border-radius: 14px;
 	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
-	margin: 36px 0;
+	margin: 36px 18px;
 }
 
 .culture-txt {
@@ -307,7 +309,7 @@ body {
 	text-align: center;
 	font-size: 40px;
 	font-weight: 700;
-	padding: 62px 0 45px ;
+	padding: 62px 0 45px;
 	letter-spacing: -2px;
 }
 
@@ -341,7 +343,7 @@ body {
 .item-help {
 	font-size: 16px;
 	font-weight: 700;
-	line-height: 34px;
+	line-height: 70px;
 	background-color: #FEE102;
 	padding: 10px 25px;
 	border-radius: 13px;
@@ -355,28 +357,15 @@ body {
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	background: #FEE102;
-	left: -5px;
-	top: 2px;
-	border-radius: 0 15px 0 0;
-	z-index: -1;
-	transform: rotate(5deg);
-}
-
-.item-help::after {
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	background: #ffffff;
-	left: -12px;
-	transform: rotate(34deg);
-	border-radius: 0 15px 0 0;
-	z-index: -1;
+	background-image: url('./img/txt-box-icon-yellow.svg');
+	background-size: cover;
+	left: -4px;
+	top: 0;
+	z-index: -10;
+	
 }
 
 .item-site {
-	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -387,6 +376,7 @@ body {
 	padding: 0 20px;
 	border-radius: 13px;
 	letter-spacing: -2px;
+	font-weight: 700;
 }
 
 .item-site a {
@@ -395,4 +385,119 @@ body {
 
 .item-wrap-long {
 	height: 1104px;
+}
+
+@media screen and (max-width:1422px) {
+
+	.tit-main {
+		font-size: 36px;
+		line-height: 25px;
+	}
+
+	.tit-main .tit h3 {
+		line-height: 55px;
+	}
+
+	.tit-main .tit img {
+		width: 55px;
+		height: 55px;
+		
+	}
+	.item-wrap {
+		height: 1740px;
+	}
+	
+	.gnb {
+		max-width: 952px;
+	}
+
+	.tit-main {
+		margin: 0 15px;
+	}
+
+	#page-main {
+		max-width: 982px;
+	}
+
+	.culture-wrap {
+		margin: 30px 0 30px 18px;
+	}
+
+	.item-wrap-long {
+		height: 2208px;
+	}
+}
+
+@media screen and (max-width:1005px) {
+	.tit-main {
+		font-size: 30px;
+		padding: 48px 0;
+		margin: 0;
+	}
+
+	.tit-main .tit h3 {
+		line-height: 40px;
+	}
+
+	.tit-main .tit img {
+		width: 40px;
+		height: 40px;
+	}
+
+	#page-main, .gnb {
+		max-width: 630px;
+	}
+
+	.menu, .icon {
+		visibility: hidden;
+	}
+
+	.cont-wrap {
+		flex-direction: column;
+		/* flex-basis: auto; */
+	}
+
+	.item-wrap {
+		height: 870px;
+		margin: 18px 0;
+		flex-basis: auto;
+		/* justify-content: space-around; */
+		/* padding: 25px 24px; */
+	}
+
+	.culture-wrap {
+		width: 630px;
+		height: auto;
+		margin: 18px 0;
+	}
+
+	.culture-txt {
+		font-size: 36px;
+		line-height: 52px;
+	}
+
+	.culture-btn {
+		margin-top: 24px;
+	}
+
+	.culture-img {
+		max-width: 420px;
+		height: 420px;
+		margin: 44px auto;
+	}
+
+	.mid-item-wrap {
+		order: 2;
+	}
+
+	.item-wrap-long {
+		height: 1104px;
+	}
+	
+	.big-item-wrap {
+		position: relative;
+		height: 750px;
+	}
+
+	
 }
