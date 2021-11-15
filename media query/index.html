@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <style>
+        .gnb {
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 5px auto;
+            padding: 5px;
+            width: 70%;
+        }
+
+        .gnb img {
+            width: 100px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin-right: 30px;
+        }
+
+        .searchbar input {
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .item-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            background-color: rgb(39, 47, 58);
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .item-img {
+            width: 100%;
+        }
+
+        .item-desc {
+            flex: auto;
+            color: whitesmoke;
+            padding: 10px;
+        }
+
+        .ad {
+            margin: 5px;
+            padding: 15px;
+            width: 30%;
+        }
+
+        footer {
+            padding: 50px;
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        footer small {
+            font-size: 10px;
+        }
+
+        .icon {
+            display: none;
+            filter: invert(50%);
+        }
+
+        @media screen and (max-width:1253px) {
+            .item {
+                width: 500px;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            .item {
+                width: 80%;
+            }
+
+            .icon {
+                display: block;
+                order: 2;
+                line-height: 35px;
+                font-size: 25px;
+            }
+
+            .menu {
+                display: none;
+            }
+            
+            .searchbar {
+                display: none;
+                }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="blind">홈페이지</h1>
+        <nav class="gnb">
+            <img class="logo" src="../20211111/10000hours/img/licat.png" alt="">
+            <ul class="menu">
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li> 
+            </ul>
+            <li class="icon"><a href="#"><i class="fas fa-bars"></i></a></li>
+            <form action="#" class="searchbar">
+                <label for="search" class="blind">검색창</label>
+                <input type="search" id="search">
+            </form>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="item-container">
+            <h2 class="blind"></h2>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+                <article class="item">
+                    <a href="#"><img src="../20211111/10000hours/img/licat.png" alt="" class="item-img"></a>
+                    <p class="item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur quis sequi nam quidem,
+                        alias veniam. Voluptas corporis laudantium quam ullam eligendi, facere quae qui, unde recusandae doloribus
+                        mollitia nemo!</p>
+                </article>
+        </section>
+        <aside class="ad">
+            <p class="ad-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum voluptatem ratione minima
+                expedita repellendus,
+                amet nihil aspernatur necessitatibus in. In ab exercitationem natus amet molestias harum asperiores beatae,
+                magnam vitae?</p>
+        </aside>
+    </main>
+    <footer>
+        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia reiciendis deserunt architecto excepturi.
+            Maxime deserunt similique perspiciatis eaque, temporibus ullam, voluptatem itaque provident quo, suscipit qui
+            repellendus. Eos, maiores.</small>
+    </footer>
+</body>
+</html>
