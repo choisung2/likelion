@@ -1,0 +1,93 @@
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+#app {
+    font-family: 'Noto Sans KR', sans-serif;;
+}
+.movie-card {
+    width: 608px;
+    height: 500px;
+    background-color: #333;
+    margin: 192px auto;
+    border-radius: 14px;
+    color: white;
+    position: relative;
+}
+
+.txt-sub {
+    margin: auto 0;
+}
+.txt-sub span {
+    color: #BDBDBD;
+    padding: 0 11px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.txt-sub span:first-child {
+    padding-left: 0;
+    display: inline-block;
+    line-height: 14px;
+    border-right: 2px solid #BDBDBD;
+}
+
+.movie-poster {
+    width: 281px;
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: auto 0;
+}
+
+.btn-like {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.btn-like li img {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-like li button {
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.score-star {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    margin: auto 0;
+}
+
+.icon-star {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+.icon-star img {
+    width: 49px;
+}
+
+.item-cont {
+    position: absolute;
+    top: 52px;
+    right: 95px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: fit-content(100%);
+	grid-template-rows: 50px 45px 110px 70px 55px 70px;
+    letter-spacing: -0.2px;
+}
+
