@@ -1,14 +1,12 @@
 @font-face {
     font-family: 'SpoqaHanSansNeo-M';
     src: url('./fonts/SpoqaHanSansNeo-Medium.ttf') format('truetype');
-    font-size: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'SpoqaHanSansNeo-B';
     src: url('./fonts/SpoqaHanSansNeo-Bold.ttf') format('truetype');
-    font-size: normal;
     font-weight: normal;
 }
 
@@ -163,11 +161,11 @@ h1 {
     line-height: 12px;
     padding-right: 12px;
     margin-right: 12px;
-    cursor: pointer;
+    color: #767676;
 }
 
 .info .find-info {
-    cursor: pointer;
+    color: #767676;
 }
 
 .div-line {
