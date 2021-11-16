@@ -21,6 +21,7 @@
     border-radius: 10px;
     font-family: 'SpoqaHanSansNeo-B';
     box-sizing: border-box;
+    position: relative;
 }
 
 h1 {
@@ -29,6 +30,16 @@ h1 {
     padding: 20px 0 18px 0;
     line-height: 20.03px;
     text-align: center;
+}
+
+.login-close-btn {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #767676;
 }
 
 .cont {
