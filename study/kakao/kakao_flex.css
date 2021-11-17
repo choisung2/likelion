@@ -90,6 +90,10 @@ body {
 	padding-left: 10px;
 }
 
+.tit-main .txt-today-short {
+	display: none;
+}
+
 .cont-wrap {
 	display: flex;
 }
@@ -278,11 +282,12 @@ body {
 }
 
 .item-stock::after {
-	content: '▼3500';
+	content: '\25BC 3500';
 	font-size: 14px;
+	font-weight: 700;
 	color: #4e7edf;
 	position: absolute;
-	left: 170px;
+	left: 160px;
 	top: 15px;
 }
 
@@ -328,16 +333,17 @@ body {
 	cursor: pointer;
 }
 
-.culture-btn .ico_arr {
-	width: 14px;
-	margin: 5px 0 0 5px;
+.culture-btn .bi, .etc-box .bi {
+	font-size: 28px;
+	vertical-align: middle;
 }
 
 .culture-img {
 	background-color: #FAE100;
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	height: 240px;
-	margin: 54px auto;
+	margin: 50px auto;
 }
 
 .item-help {
@@ -387,6 +393,72 @@ body {
 	height: 1104px;
 }
 
+.etc-wrap {
+	margin: 36px 0;
+	display: flex;
+}
+
+.etc-item {
+	width: 50%;
+	border: 1px solid #eee;
+	border-radius: 14px;
+	box-shadow: 4px 12px 30px 6px rgba(0, 0, 0, 9%);
+	margin: 0 18px;
+	box-sizing: border-box;
+}
+
+.etc-service {
+	background-color: #fae100;
+}
+
+
+.etc-link {
+	display: block;
+	height: 360px;
+	padding: 36px;	
+	background-size: 160px;
+	background-image: url('./img/responsible.png');
+	filter: drop-shadow(5px 5px 5px rgba(48, 48, 48, 0.2));
+	background-repeat: no-repeat;
+	background-position: 90% 80%;
+}
+
+.etc-tit {
+	display: block;
+    font-size: 30px;
+    font-weight: 700;
+    max-width: 480px;
+    word-break: keep-all;
+    line-height: 44px;
+	word-spacing: -4px;
+}
+
+.etc-box {
+	display: inline-block;
+	margin: 24px auto;
+	padding: 8px 20px;
+	border: 1px solid black;
+	border-radius: 42px;
+	background-color: black;
+	color: white;
+	letter-spacing: -1.5px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.etc-talent {
+	background-color: #3c64ff;
+}
+
+.etc-box .i-arr {
+	display: inline-block;
+	transform: rotate(-45deg);
+	font-size: 28px;
+}
+
+
+
+
 @media screen and (max-width:1422px) {
 
 	.tit-main {
@@ -425,6 +497,10 @@ body {
 
 	.item-wrap-long {
 		height: 2208px;
+	}
+
+	.etc-item {
+		margin: 0 0 0 18px;
 	}
 }
 
@@ -500,4 +576,26 @@ body {
 	}
 
 	
+}
+
+@media screen and (max-width:760px) {
+	.tit-main .txt-today {
+		display: none;
+	}
+
+	.tit-main .txt-today-short {
+		display: inline-block;
+	}
+
+	.cont-wrap, .item-wrap {
+		margin: 0 auto;
+	}
+
+	.item-wrap {
+		display: block;
+	}
+
+	.item-big, .item-mid, .item-small {
+		width: 364px;
+	}
 }
