@@ -96,3 +96,11 @@
 .result p {
     width: 80%;
 }
+
+.kakao-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+}
