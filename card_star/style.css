@@ -13,6 +13,25 @@
     position: relative;
 }
 
+.item-cont {
+    position: absolute;
+    top: 52px;
+    right: 95px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: fit-content(100%);
+	grid-template-rows: 50px 45px 110px 70px 55px 70px;
+    letter-spacing: -0.2px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: auto 0;
+}
+
 .txt-sub {
     margin: auto 0;
 }
@@ -36,33 +55,62 @@
     grid-row: 1 / 6;
 }
 
-h2 {
-    font-size: 32px;
-    font-weight: 700;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    margin: auto 0;
-}
-
 .btn-like {
     display: flex;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
-
 .btn-like li img {
     width: 28px;
     height: 28px;
 }
-
-.btn-like li button {
+/* .btn-like li #check {
     padding: 15px;
     background-color: transparent;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #BDBDBD;
     border-radius: 50px;
     cursor: pointer;
     margin-right: 20px;
+} */
+/* .btn-like li #check:hover {
+    border-color: #FFFFFF;
+} */
+#like-check, #love-check {
+    display: none;
 }
+
+#like-check + label, #love-check + label {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 15px;
+    margin-right: 15px;
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+#like-check + label {
+    background-image: url('./src/icon_thumbs_up.png');
+}
+
+#love-check + label {
+    background-image: url('./src/icon_heart.png');
+}
+
+#like-check:checked + label {
+    background-image: url('./src/icon_thumbs_up_fill.png');
+    background-color: #2F80ED;
+}
+
+#love-check:checked + label {
+    background-image: url('./src/icon_heart_fill.png');
+    background-color: #EB5757;
+}
+
 
 .score-star {
     grid-column: 2 / 3;
@@ -75,19 +123,7 @@ h2 {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
 }
-
 .icon-star img {
     width: 49px;
-}
-
-.item-cont {
-    position: absolute;
-    top: 52px;
-    right: 95px;
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: fit-content(100%);
-	grid-template-rows: 50px 45px 110px 70px 55px 70px;
-    letter-spacing: -0.2px;
 }
 
