@@ -1,8 +1,9 @@
 @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
-#app {
+html {
     font-family: 'Noto Sans KR', sans-serif;;
 }
+
 .movie-card {
     width: 608px;
     height: 500px;
@@ -64,17 +65,7 @@ h2 {
     width: 28px;
     height: 28px;
 }
-/* .btn-like li #check {
-    padding: 15px;
-    background-color: transparent;
-    border: 2px solid #BDBDBD;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-right: 20px;
-} */
-/* .btn-like li #check:hover {
-    border-color: #FFFFFF;
-} */
+
 #like-check, #love-check {
     display: none;
 }
@@ -127,3 +118,11 @@ h2 {
     width: 49px;
 }
 
+.remove-star {
+    position: absolute;
+    bottom: 37px;
+    right: -38px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
