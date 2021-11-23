@@ -14,22 +14,26 @@
 </head>
 <body>
     <header id="page-header">
-        <h1 class="sr-only">키키오</h1>
-        <nav class="gnb">
-            <a href="#"><img src="./src/logo.png" class="logo-img" alt=""></a>
-            <h2 class="sr-only">메인 메뉴</h2>
-            <ul class="menu">
-                <li><a href="#">키키오</a></li>
-                <li><a href="#">뉴스</a></li>
-                <li><a href="#">기술과 서비스</a></li>
-                <li><a href="#">약속과 책임</a></li>
-            </ul>
-            <ul class="icon">
+        <div class="header-wrap">
+            <h1 class="logo">
+                <a href="#"><img src="./src/logo.png" alt="키키오" class="logo-img"></a>
+            </h1>
+            <nav class="gnb">
+                <h2 class="sr-only">메인 메뉴</h2>
+                <ul class="menu">
+                    <li><a href="#">키키오</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">기술과 서비스</a></li>
+                    <li><a href="#">약속과 책임</a></li>
+                </ul>
+            </nav>
+            <ul class="util">
                 <li><button><i class="bi bi-search"></i></button></li>
                 <li><button><i class="bi bi-globe2"></i></button></li>
                 <li><button><i class="bi bi-moon"></i></button></li>
+                <li><button><i class="bi bi-emoji-wink"></i></button></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main id="page-main">
         <section class="tit-main">
@@ -38,7 +42,7 @@
                 <img src="./src/month.gif" alt="">
                 <h3>오늘의 키키오<h3>
             </div>
-            <span class="txt-today">11월 9일 화요일 소식<span>입니다</span></span>
+            <p class="txt-today">11월 23일 화요일 소식<span class="txt-today-short">입니다</span></p>
         </section>
         <section class="cont-wrap">
             <h2 class="sr-only">메인 뉴스</h2>
@@ -258,6 +262,7 @@
             </article>
         </section>
         <a href="javascript:void(0)" class="collection-news">키키오 소식 모아보기</a>
+        <a href="#page-header" class="top-btn"><i class="bi bi-arrow-right-short"></i></a>
     </main>
     <footer id="page-footer">
         <div class="inner-footer">
