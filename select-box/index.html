@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Select</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Select Box</h2>
+    <article class="cont-select">
+        <button class="btn-select">최애 애니메이션</button>
+        <ul class="list-member">
+            <li><button type="button">나루토</button></li>
+            <li><button type="button">진격의 거인</button></li>
+            <li><button type="button">원펀맨</button></li>
+            <li><button type="button">귀멸의 칼날</button></li>
+            <li><button type="button">나의 히어로 아카데미아</button></li>
+        </ul>
+    </article>
+    
+    <script>
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+                btn.classList.remove('on');
+            }
+        });
+    </script>
+</body>
+</html>
