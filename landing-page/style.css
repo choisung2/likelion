@@ -40,7 +40,7 @@ button:hover:not(.btn-round) {
   z-index: 10;
 }
 
-.hamburger {
+.nav-trigger {
   display: none;
 }
 
@@ -225,8 +225,8 @@ button:hover:not(.btn-round) {
 .modal-dim {
   display: none;
   width: 100vw;
-  height: 100vh;
-  top: -180%;
+  height: 400vh;
+  top: -400%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -276,7 +276,7 @@ button:hover:not(.btn-round) {
 }
 
 .stop-scrolling {
-  height: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -396,6 +396,9 @@ button:hover:not(.btn-round) {
     flex-direction: column;
     gap: 40px;
   }
+  .modal {
+    top: -60px;
+  }
 }
 
 @media screen and (max-width: 835px) {
@@ -403,7 +406,7 @@ button:hover:not(.btn-round) {
     position: relative;
   }
 
-  .hamburger {
+  .nav-trigger {
     display: block;
   }
 
@@ -509,9 +512,22 @@ button:hover:not(.btn-round) {
   .subscribe-input button {
     top: 90px;
   }
+
+  .modal {
+    width: 400px;
+    height: 400px;
+    background-color: #f2e9d8;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    top: 50px;
+  }
+
+  .modal p {
+    margin: 0 55px 38px;
+  }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   .info h2 {
     font-size: 24px;
     line-height: 30px;
@@ -558,12 +574,25 @@ button:hover:not(.btn-round) {
 
   .box-wrap {
     margin: 36px 32px;
+    gap: 30px;
+  }
+
+  .term-txt {
+    margin-bottom: 300px;
+  }
+
+  .term-txt button {
+    width: 126px;
+    height: 40px;
+    margin-left: 170px;
   }
 
   .subscribe-box {
     width: 326px;
+    min-width: 326px;
     height: 348px;
     border-radius: 18px;
+    top: -250px;
   }
   .subscribe-txt strong {
     font-size: 24px;
@@ -580,18 +609,56 @@ button:hover:not(.btn-round) {
     height: 40px;
   }
 
+  .subscribe-input button {
+    width: 117px;
+    height: 40px;
+    top: 60px;
+  }
+
+  .modal {
+    width: 300px;
+    height: 300px;
+    background-color: #f2e9d8;
+    background-size: 300px;
+    background-repeat: no-repeat;
+  }
+
+  .modal img {
+    width: 60px;
+  }
+
+  .modal span {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .modal p {
+    margin: 0 51px 28px;
+  }
+
+  .modal button {
+    width: 163px;
+    height: 40px;
+  }
+
   .util {
     flex-direction: column;
     align-items: flex-start;
     gap: 58px;
     width: initial;
+    margin-left: 20px;
   }
 
   .sns {
     gap: 16px;
   }
 
+  .sns img {
+    width: 32px;
+  }
+
   .lnb {
     display: block;
+    margin-right: 20px;
   }
 }
